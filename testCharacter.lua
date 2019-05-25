@@ -12,6 +12,8 @@ testCharacter.newCharacter = function()
 		g.polygon("fill", self.body:getWorldPoints(self.shape:getPoints()))
 	end
 
+	-- newCharacter.body:setLinearDamping(1.5)
+
 	newCharacter.applyForce = function(self, dx, dy) 
 		self.body:applyForce(dx, dy)
 	end
