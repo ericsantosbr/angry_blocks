@@ -11,8 +11,9 @@ testCharacter.newCharacter = function()
 		g.setColor(self.color)
 		g.polygon("fill", self.body:getWorldPoints(self.shape:getPoints()))
 	end
+	newCharacter.body:setFixedRotation(true)
 
-	-- newCharacter.body:setLinearDamping(1.5)
+	newCharacter.body:setLinearDamping(2)
 
 	newCharacter.applyForce = function(self, dx, dy) 
 		self.body:applyForce(dx, dy)

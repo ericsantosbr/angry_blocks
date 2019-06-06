@@ -9,6 +9,7 @@ keys = {
 	a = false,
 	s = false,
 	d = false,
+	q = false
 }
 
 function love.keypressed(key)
@@ -22,6 +23,7 @@ function love.keypressed(key)
 	if key == "a" then keys.a = true end
 	if key == "s" then keys.s = true end
 	if key == "d" then keys.d = true end
+	if key == "q" then keys.q = true end
 end
 
 function love.keyreleased(key)
@@ -35,4 +37,5 @@ function love.keyreleased(key)
 	if key == "a" then keys.a = false end
 	if key == "s" then keys.s = false end
 	if key == "d" then keys.d = false end
+	if key == "q" then keys.q = false end
 end
